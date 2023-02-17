@@ -23,14 +23,31 @@ public class myAppswing1 {
         buttomadd.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int wynik = Integer.parseInt(textNumber1.getText()) + Integer.parseInt(textNumber2.getText());
-                textResult.setText(Integer.toString(wynik));}
+                try {
+                    Float wynik = Float.parseFloat(textNumber1.getText()) + Float.parseFloat(textNumber2.getText());
+                    textResult.setText(Float.toString(wynik));
+                     }
+                catch (NumberFormatException ex) {
+                    textResult.setText("Błędny format liczby");
+                     }
+
+            }
         });
         buttonSubsract.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                int wynik = Integer.parseInt(textNumber1.getText()) - Integer.parseInt(textNumber2.getText());
-                textResult.setText(Integer.toString(wynik)); }
+                try {
+                    Float wynik = Float.parseFloat(textNumber1.getText()) - Float.parseFloat(textNumber2.getText());
+                    textResult.setText(Float.toString(wynik));
+                }
+               catch (NumberFormatException y){
+                   textResult.setText("Błędny format liczby");
+               }
+
+
+
+
+            }
         });
 
         buttonReset.addActionListener(new ActionListener() {
@@ -46,8 +63,8 @@ public class myAppswing1 {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-               double wynik = Double.parseDouble(textNumber1.getText()) / Double.parseDouble(textNumber2.getText());
-               textResult.setText(Double.toString(wynik));
+               Float wynik = Float.parseFloat(textNumber1.getText()) / Float.parseFloat(textNumber2.getText());
+               textResult.setText(Float.toString(wynik));
             }
                 catch (NumberFormatException t){
                     textResult.setText("Błędny format liczby");
