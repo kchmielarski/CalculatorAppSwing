@@ -2,6 +2,14 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+/**
+* @author Krzysztof Chmielarski
+* @version 1.0
+*
+ */
+
+
+
 public class myAppswing1 {
     private JPanel mainPanel;
     private JTextField textResult;
@@ -16,7 +24,7 @@ public class myAppswing1 {
     private JButton ButtonDivide;
     private JButton buttonMultiply;
     private JButton buttonRoot;
-    private JLabel appName;
+    private JLabel appTitle;
     private JButton buttonadd;
 
     public myAppswing1() {
@@ -107,5 +115,6 @@ public class myAppswing1 {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
+        frame.setSize(450, 300);
     }
 }
