@@ -2,10 +2,11 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+
 /** Class myAppswing1 represents a simple version of calculator. It performs basic arithmetic operations
 * such as addition, subtraction, multiplication, division and exponentiation.
 * @author Krzysztof Chmielarski
-* @version 1.2
+* @version 1.3
  * */
 
 
@@ -18,7 +19,7 @@ public class myAppswing1 {
     private JTextField textNumber2;
     private JLabel labell2;
     private JLabel labelResult;
-    private JButton buttomadd;
+    public JButton buttomadd;
     private JButton buttonReset;
     private JButton buttonSubsract;
     private JButton ButtonDivide;
@@ -28,9 +29,10 @@ public class myAppswing1 {
     private JButton buttonadd;
 
     public myAppswing1() {
-        /** buttomadd.addActionListener method allows the user to add two numbers.
+        /**
+         * buttomadd.addActionListener method allows the user to add two numbers.
+         * @param addActionListener
          * @return addition result
-         * @param user number to be represented by the float
          * @throws NumberFormatException on user input
          * @see NumberFormatException
          * */
@@ -49,9 +51,9 @@ public class myAppswing1 {
 
             }
         });
-        /** buttonSubsract.addActionListener method allows the user to substract two numbers.
-         * @return substraction result
-         * @param user number to be represented by the float
+        /** buttonSubstract.addActionListener method allows the user to subtract two numbers.
+         * @return subtraction result
+         * @param  ActionListener.textNumber1 to be represented by the float
          * @throws NumberFormatException on user input
          * @see NumberFormatException
          * */

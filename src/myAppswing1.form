@@ -41,6 +41,7 @@
         </constraints>
         <properties>
           <text value="x"/>
+          <toolTipText value="mnożenie"/>
         </properties>
       </component>
       <component id="20baf" class="javax.swing.JButton" binding="ButtonDivide">
@@ -49,6 +50,7 @@
         </constraints>
         <properties>
           <text value="÷"/>
+          <toolTipText value="dzielenie"/>
         </properties>
       </component>
       <component id="4a316" class="javax.swing.JButton" binding="buttonRoot">
@@ -57,6 +59,7 @@
         </constraints>
         <properties>
           <text value="˄"/>
+          <toolTipText value="potęgowanie"/>
         </properties>
       </component>
       <component id="60972" class="javax.swing.JButton" binding="buttomadd">
@@ -67,6 +70,7 @@
           <actionCommand value="doaj"/>
           <alignmentY value="0.5"/>
           <text value="+"/>
+          <toolTipText value="dodawanie"/>
         </properties>
       </component>
       <component id="2db3e" class="javax.swing.JButton" binding="buttonSubsract">
@@ -75,6 +79,7 @@
         </constraints>
         <properties>
           <text value="-"/>
+          <toolTipText value="odejmowanie"/>
         </properties>
       </component>
       <component id="132c7" class="javax.swing.JTextField" binding="textNumber2">
@@ -120,6 +125,7 @@
           <horizontalTextPosition value="11"/>
           <margin top="1" left="0" bottom="0" right="0"/>
           <text value="reset"/>
+          <toolTipText value="resetowanie"/>
         </properties>
       </component>
     </children>
