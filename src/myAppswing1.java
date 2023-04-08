@@ -2,11 +2,11 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/**
+/** Class myAppswing1 represents a simple version of calculator. It performs basic arithmetic operations
+* such as addition, subtraction, multiplication, division and exponentiation.
 * @author Krzysztof Chmielarski
-* @version 1.0
-*
- */
+* @version 1.2
+ * */
 
 
 
@@ -28,6 +28,14 @@ public class myAppswing1 {
     private JButton buttonadd;
 
     public myAppswing1() {
+        /** buttomadd.addActionListener method allows the user to add two numbers.
+         * @return addition result
+         * @param user number to be represented by the float
+         * @throws NumberFormatException on user input
+         * @see NumberFormatException
+         * */
+
+
         buttomadd.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -41,6 +49,12 @@ public class myAppswing1 {
 
             }
         });
+        /** buttonSubsract.addActionListener method allows the user to substract two numbers.
+         * @return substraction result
+         * @param user number to be represented by the float
+         * @throws NumberFormatException on user input
+         * @see NumberFormatException
+         * */
         buttonSubsract.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -53,11 +67,12 @@ public class myAppswing1 {
                }
 
 
-
-
             }
         });
-
+        /** buttonReset.addActionListener method allows the user to clear all input fields in application.
+         * @return empty input fields
+         * @param no parameters
+         * */
         buttonReset.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -66,6 +81,13 @@ public class myAppswing1 {
                 textResult.setText("");
             }
         });
+
+        /** ButtonDivide.addActionListener method allows the user to divide two numbers.
+         * @return division result
+         * @param user number to be represented by the float
+         * @throws NumberFormatException on user input
+         * @see NumberFormatException
+         * */
 
         ButtonDivide.addActionListener(new ActionListener() {
             @Override
@@ -79,6 +101,14 @@ public class myAppswing1 {
                 }
             }
         });
+        /** buttonMultiply.addActionListener method allows the user to multiply two numbers.
+         * @return multiplication result
+         * @param user number to be represented by the float
+         * @throws NumberFormatException on user input
+         * @see NumberFormatException
+         * */
+
+
         buttonMultiply.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -92,6 +122,15 @@ public class myAppswing1 {
                 }
             }
         });
+
+        /** buttonRoot.addActionListener method allows the user to power the numbers.
+         * @return exponentiation result
+         * @param user number to be represented by the double
+         * @throws NumberFormatException on user input
+         * @see NumberFormatException
+         * */
+
+
         buttonRoot.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
