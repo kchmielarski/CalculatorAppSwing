@@ -53,7 +53,7 @@ public class myAppswing1 {
         });
         /** buttonSubstract.addActionListener method allows the user to subtract two numbers.
          * @return subtraction result
-         * @param  ActionListener.textNumber1 to be represented by the float
+         * @param Floaat.parseFloat  to be represented by the float
          * @throws NumberFormatException on user input
          * @see NumberFormatException
          * */
