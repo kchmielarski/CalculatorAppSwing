@@ -6,10 +6,8 @@ import java.awt.event.ActionListener;
 /** Class myAppswing1 represents a simple version of calculator. It performs basic arithmetic operations
 * such as addition, subtraction, multiplication, division and exponentiation.
 * @author Krzysztof Chmielarski
-* @version 1.3
- * */
-
-
+* @version 1.4
+ */
 
 public class myAppswing1 {
     private JPanel mainPanel;
@@ -19,26 +17,24 @@ public class myAppswing1 {
     private JTextField textNumber2;
     private JLabel labell2;
     private JLabel labelResult;
-    public JButton buttomadd;
+    public JButton buttonadd;
     private JButton buttonReset;
-    private JButton buttonSubsract;
+    private JButton buttonSubstract;
     private JButton ButtonDivide;
     private JButton buttonMultiply;
     private JButton buttonRoot;
     private JLabel appTitle;
-    private JButton buttonadd;
+
 
     public myAppswing1() {
         /**
-         * buttomadd.addActionListener method allows the user to add two numbers.
-         * @param addActionListener
-         * @return addition result
-         * @throws NumberFormatException on user input
-         * @see NumberFormatException
-         * */
+        * invoked when an action occurs.
+        * @param e the event to be proccessed
+        * @return addition result
+        * @throws NumberFormatException on user input
+        */
+        buttonadd.addActionListener(new ActionListener() {
 
-
-        buttomadd.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -51,13 +47,14 @@ public class myAppswing1 {
 
             }
         });
-        /** buttonSubstract.addActionListener method allows the user to subtract two numbers.
-         * @return subtraction result
-         * @param Floaat.parseFloat  to be represented by the float
+        /**
+         * invoked when an action occurs.
+         * @param e the event to be proccessed
+         * @return substraction result
          * @throws NumberFormatException on user input
-         * @see NumberFormatException
-         * */
-        buttonSubsract.addActionListener(new ActionListener() {
+         */
+        buttonSubstract.addActionListener(new ActionListener() {
+
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -71,11 +68,13 @@ public class myAppswing1 {
 
             }
         });
-        /** buttonReset.addActionListener method allows the user to clear all input fields in application.
-         * @return empty input fields
-         * @param no parameters
-         * */
-        buttonReset.addActionListener(new ActionListener() {
+            /**
+            * invoked when an action occurs.
+            * @param e the event to be proccessed
+            * @return empty input fields
+            */
+            buttonReset.addActionListener(new ActionListener() {
+
             @Override
             public void actionPerformed(ActionEvent e) {
                 textNumber1.setText("");
@@ -83,15 +82,14 @@ public class myAppswing1 {
                 textResult.setText("");
             }
         });
+            /**
+            * invoked when an action occurs.
+            * @param e the event to be proccessed
+            * @return division result
+            * @throws NumberFormatException on user input
+            */
+              ButtonDivide.addActionListener(new ActionListener() {
 
-        /** ButtonDivide.addActionListener method allows the user to divide two numbers.
-         * @return division result
-         * @param user number to be represented by the float
-         * @throws NumberFormatException on user input
-         * @see NumberFormatException
-         * */
-
-        ButtonDivide.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -103,15 +101,14 @@ public class myAppswing1 {
                 }
             }
         });
-        /** buttonMultiply.addActionListener method allows the user to multiply two numbers.
-         * @return multiplication result
-         * @param user number to be represented by the float
-         * @throws NumberFormatException on user input
-         * @see NumberFormatException
-         * */
-
-
+        /**
+        * invoked when an action occurs.
+        * @param e the event to be proccessed
+        * @return multiplication result
+        * @throws NumberFormatException on user input
+        */
         buttonMultiply.addActionListener(new ActionListener() {
+
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -124,16 +121,14 @@ public class myAppswing1 {
                 }
             }
         });
-
-        /** buttonRoot.addActionListener method allows the user to power the numbers.
-         * @return exponentiation result
-         * @param user number to be represented by the double
-         * @throws NumberFormatException on user input
-         * @see NumberFormatException
-         * */
-
-
+        /**
+        * invoked when an action occurs.
+        * @param e the event to be proccessed
+        * @return exponentiation result
+        * @throws NumberFormatException on user input
+        */
         buttonRoot.addActionListener(new ActionListener() {
+
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
@@ -145,11 +140,14 @@ public class myAppswing1 {
                 catch (NumberFormatException w) {
                     textResult.setText("Błędny format liczby");
                 }
-
                  }
         });
     }
 
+    /**
+     * Main function of class myAppswing1
+     * @param args parameters of JFrame
+     */
     public static void main(String[] args) {
         JFrame frame = new JFrame("myAppswing1");
         frame.setContentPane(new myAppswing1().mainPanel);
