@@ -6,20 +6,20 @@ import java.awt.event.ActionListener;
 /** Class myAppswing1 represents a simple version of calculator. It performs basic arithmetic operations
 * such as addition, subtraction, multiplication, division and exponentiation.
 * @author Krzysztof Chmielarski
-* @version 1.4
+* @version 1.5
  */
 
 public class myAppswing1 {
     private JPanel mainPanel;
     private JTextField textResult;
     private JTextField textNumber1;
-    private JLabel labell1;
+    private JLabel label1;
     private JTextField textNumber2;
-    private JLabel labell2;
+    private JLabel label2;
     private JLabel labelResult;
-    public JButton buttonadd;
+    public JButton buttonAdd;
     private JButton buttonReset;
-    private JButton buttonSubstract;
+    private JButton buttonSubtract;
     private JButton ButtonDivide;
     private JButton buttonMultiply;
     private JButton buttonRoot;
@@ -29,11 +29,11 @@ public class myAppswing1 {
     public myAppswing1() {
         /**
         * invoked when an action occurs.
-        * @param e the event to be proccessed
+        * @param e the event to be processed
         * @return addition result
         * @throws NumberFormatException on user input
         */
-        buttonadd.addActionListener(new ActionListener() {
+        buttonAdd.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -49,11 +49,11 @@ public class myAppswing1 {
         });
         /**
          * invoked when an action occurs.
-         * @param e the event to be proccessed
-         * @return substraction result
+         * @param e the event to be processed
+         * @return subtraction result
          * @throws NumberFormatException on user input
          */
-        buttonSubstract.addActionListener(new ActionListener() {
+        buttonSubtract.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -70,7 +70,7 @@ public class myAppswing1 {
         });
             /**
             * invoked when an action occurs.
-            * @param e the event to be proccessed
+            * @param e the event to be processed
             * @return empty input fields
             */
             buttonReset.addActionListener(new ActionListener() {
@@ -84,7 +84,7 @@ public class myAppswing1 {
         });
             /**
             * invoked when an action occurs.
-            * @param e the event to be proccessed
+            * @param e the event to be processed
             * @return division result
             * @throws NumberFormatException on user input
             */
@@ -103,7 +103,7 @@ public class myAppswing1 {
         });
         /**
         * invoked when an action occurs.
-        * @param e the event to be proccessed
+        * @param e the event to be processed
         * @return multiplication result
         * @throws NumberFormatException on user input
         */
@@ -123,7 +123,7 @@ public class myAppswing1 {
         });
         /**
         * invoked when an action occurs.
-        * @param e the event to be proccessed
+        * @param e the event to be processed
         * @return exponentiation result
         * @throws NumberFormatException on user input
         */
